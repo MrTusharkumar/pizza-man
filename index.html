@@ -23,6 +23,9 @@
                     },
                     fontFamily: {
                         quicksand: ['Quicksand', 'sans-serif'],
+                    },
+                    animation: {
+                        'spin-slow': 'spin 20s linear infinite',
                     }
                 }
             }
@@ -33,19 +36,6 @@
             font-family: 'Quicksand', sans-serif;
         }
 
-        .pizza-spinner {
-            animation: spin 15s linear infinite;
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
 
         .cart-drawer {
             transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,7 +102,7 @@
                 <div class="relative w-64 h-64 md:w-80 md:h-80 shrink-0">
                     <img src="C:\Users\Computer\.gemini\antigravity\brain\ee69486b-4f5b-4266-94be-801b07ea76f9\pizza_man_hero_premium_1775992184296.png"
                         alt="Pizza"
-                        class="w-full h-full object-cover pizza-spinner rounded-full drop-shadow-2xl border-8 border-white/20">
+                        class="w-full h-full object-cover animate-spin-slow rounded-full drop-shadow-2xl border-8 border-white/20">
                 </div>
             </div>
         </section>
